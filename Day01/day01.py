@@ -24,4 +24,6 @@ with open(input, 'r') as reader:
     
     print("Answer to part 1: " + str(sum(distances)))
 
-    similarity_scores = []
+    similarity_scores = [l*right.count(l) for l in left]
+    
+    print("Answer to part 2: " + str(sum(similarity_scores)))
